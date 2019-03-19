@@ -14,18 +14,28 @@ button {
 
 body {
 	font: 1em/1.5;
-	color: #184f68;
-	background: #accbd9;
+	color: #134f5c;
+	background: #ffffff;
 }
 
 header {
 	text-align: center;
+	padding: 40px 0;
+}
+
+header span {
+	text-transform: uppercase;
+	border-bottom: 1px solid #184f68;
+	padding-bottom: 3px;
+	font-size: 1.3em;
 }
 
 h1 {
-	font-size: 2.5em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	padding-top: 3px;
+	font-size: 2em;
+	text-shadow: 0 2px 0 rgba(46, 46, 46, 0.45);
 	margin: 0;
+	text-transform: uppercase;
 }
 
 a {
@@ -38,7 +48,9 @@ a {
 
 form {
 	padding: .875em 1.875em 1.875em;
-	background: #85b5ca;
+	background-image: linear-gradient(to right top, #bebebe, #c9c9c9, #d4d4d4, #e0e0e0, #ebebeb);
+	border-radius: 10px;
+	border: 2px solid #134f5ca2;
 }
 
 fieldset,
@@ -60,7 +72,7 @@ button {
 legend {
 	font-weight: 500;
 	padding-top: .5em;
-	border-top: 2px solid #679cb3;
+	border-top: 2px solid #134f5ca2;
 	margin-bottom: 1.125em;
 }
 
@@ -85,14 +97,15 @@ input {
 	font-size: 1em;
 	font-weight: 500;
 	padding: .8em;
-	background: #c1deeb;
-	border: 2px solid #c1deeb;
+	background: #EAFDFF;
+	border: 2px solid #dcf2fc;
 	outline: none;
+	border-radius: 5px;
 }
 
 input:focus {
 	background: #fff;
-	border-color: #5e97b0;
+	border-color: #134f5ca2;
 	transition: border-color .4s, background-color .4s;
 }
 
@@ -102,15 +115,17 @@ input[type="radio"] {
 }
 
 button {
+	display: block;
 	color: #fff;
 	padding: .55em 1.25em;
 	background: #22627e;
-	margin: 1.25em 0 .5em;
+	margin: 1em auto;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 button:hover {
-	background: #184c62;
+	background: rgba(24, 76, 98, 0.897);
 }
 
 /* ================================= 
@@ -165,7 +180,7 @@ button:hover {
 
 @media (min-width: 680px) {
 	header {
-		padding: 4.65em 0 2.5em;
+		padding: 2.5em 0 2.5em;
 	}
 
 	.col {

@@ -93,7 +93,8 @@ select {
 	margin-bottom: 1.125em;
 }
 
-input {
+input,
+select {
 	font-size: 1em;
 	font-weight: 500;
 	padding: .8em;
@@ -101,9 +102,11 @@ input {
 	border: 2px solid #dcf2fc;
 	outline: none;
 	border-radius: 5px;
+	color: #134f5c;
 }
 
-input:focus {
+input:focus,
+select:focus {
 	background: #fff;
 	border-color: #134f5ca2;
 	transition: border-color .4s, background-color .4s;
@@ -118,14 +121,14 @@ button {
 	display: block;
 	color: #fff;
 	padding: .55em 1.25em;
-	background: #22627e;
+	background: rgba(24, 76, 98, 0.897);
 	margin: 1em auto;
 	cursor: pointer;
 	border-radius: 5px;
 }
 
 button:hover {
-	background: rgba(24, 76, 98, 0.897);
+	background: rgba(27, 93, 121, 0.897);
 }
 
 /* ================================= 
